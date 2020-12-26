@@ -1,0 +1,212 @@
+/*******************************************************************************
+*                                                                              *
+* ROOT                                                                         *
+*                                                                              *
+*******************************************************************************/
+
+.root{
+   -ss-main-color: #039ed3;
+   -ss-dark-main-color: #0096c9;
+   -ss-background-color: #F4F4F4;
+   -ss-light-background-color: #ffffff;
+   -ss-accent-color: #323232;
+   -ss-divider-color: #dadada;
+
+   -close-button: "M465.01 663.81l571.85 574.83 -576.69 581.81 241.13 230.38 584.4 -578.28 581.68 579.2 219.64 -220.88 -552.75 -582.1 563.65 -575.64 -222.74 -215.56 -579.07 540.37 -582.53 -542.81 -248.57 208.68zm-459.93 -650.58l5.17 -0.28 0.46 -5.35 -5.63 0 0 5.63zm2521.69 2526.72l13.18 0 0 -13.18 -12.53 1.09 -0.65 12.09z";
+   -collapse-button: "M622.64 1403.49c315.72,-7.04 159.9,-2.92 270.73,134.58 103.4,128.28 407.19,81.59 608.69,81.59l-4.24 215.51 -872.04 -1.1 -3.14 -430.58zm438.34 -449.36l885.29 4.14 -6.24 436.68 -875.2 0.78 -3.85 -441.6zm-226.4 -3.32c-457.12,32.42 -443.85,-68.36 -433.68,817.07 4.48,390.4 270.45,284.97 951.73,288.62 461.4,2.48 319.82,-113.52 379.42,-437.77 459.14,-32.55 443.78,61.52 433.71,-817.07 -4.5,-390.35 -270.76,-284.96 -951.74,-288.62 -461.36,-2.49 -319.82,113.57 -379.44,437.77zm-821.26 -924.35l11.68 0 0 -11.68 -11.68 0 0 11.68zm2513.45 2513.35l10.36 0 0 -10.36 -10.36 0 0 10.36z";
+   -minimize-button: "M565.06 1977.36l1428.74 0 0 -317.5 -1428.74 0 0 317.5zm-551.83 -1977.36l-13.23 0 0 13.23 13.23 0 0 -13.23zm2527.92 2538.76l0 -11.99 -11.99 0 0 11.99 11.99 0z";
+   -plus-button: "M1164.16 1164.16l-634.99 0 -0.01 211.66 635 0 0 634.99 211.66 0.01 0 -635 634.99 0 0.01 -211.66 -635 0 0 -634.99 -211.66 -0.01 0 635zm-1164.16 -1150.94l13.23 0 0 -13.23 -13.23 0 0 13.23zm2526.77 2526.77l13.21 0 0 -13.21 -13.21 0 0 13.21z";
+   -delete-button: "M635.15 2037.33c0,386.84 293.15,290.93 965.62,290.93 230.56,0 304.16,-74.43 304.16,-290.93l0 -1296.35 -1269.78 0 0 1296.35zm317.37 -1616.09l-423.2 2.5 0 211.2 1481.55 0 -0.11 -211.46 -423.2 -0.56c-134.7,-143.41 -108.2,-105.52 -317.51,-105.55 -204.15,-0.03 -184.21,-36.4 -317.53,103.87zm-952.47 -408.01l12.09 -0.65 1.09 -12.53 -13.18 0 0 13.18zm2526.72 2526.8l13.26 0 0 -13.26 -12.6 1.09 -0.66 12.17z";
+}
+
+/*******************************************************************************
+*                                                                              *
+* DECORATOR                                                                    *
+*                                                                              *
+*******************************************************************************/
+
+#decorator {
+	-fx-background-color: -ss-main-color;
+}
+
+#title{
+	-fx-text-fill:  -ss-background-color;
+	-fx-font-weight: BOLD;
+}
+
+#menu-label {
+	-fx-text-fill:  -ss-background-color;
+}
+
+#menu-label:hover {
+	-fx-text-fill:  -ss-light-background-color;
+}
+
+#menu-label:pressed {
+	-fx-text-fill:  -ss-light-background-color;
+}
+
+#menu-label-devider {
+	-fx-text-fill:  -ss-background-color;
+}
+
+#divider{
+	-fx-background-color: -ss-background-color;
+}
+
+#divider-pane {
+    -fx-background-color: -ss-divider-color
+}
+
+/*******************************************************************************
+*                                                                              *
+* TOAST                                                                        *
+*                                                                              *
+*******************************************************************************/
+
+#toast-pane {
+	-fx-background-radius: 20;
+	-fx-background-color: rgba(0, 0, 0, 0.6);
+	-fx-padding: 15px;
+}
+
+#toast-text {
+	-fx-fill: -ss-background-color;
+}
+
+#search-field {
+    -fx-background-color: transparent, transparent;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-font-weight: BOLD;
+    -fx-prompt-text-fill: -ss-accent-color;
+    -fx-background-insets: 0.0, 0.0 0.0 0.0 0.0 ;
+    -fx-background-radius: 0.0;
+}
+
+#search-field:focused {
+    -fx-prompt-text-fill: transparent;
+}
+
+/*******************************************************************************
+*                                                                              *
+* BUTTONS                                                                      *
+*                                                                              *
+*******************************************************************************/
+
+#close-button {
+	-fx-shape: -close-button;
+}
+
+#collapse-button {
+	-fx-shape: -collapse-button;
+}
+
+#minimize-button {
+	-fx-shape: -minimize-button;
+}
+
+#plus-button{
+	-fx-shape: -plus-button;
+}
+
+#delete-button{
+   	-fx-shape: -delete-button;
+}
+
+.custom-button {
+	-fx-background-insets: 0.0, 0.0 0.0 0.0 0.0;
+	-fx-background-color: -ss-background-color;
+	-fx-content-display: graphic-only;
+}
+
+.custom-button:hover {
+	-fx-background-color: -ss-light-background-color;
+}
+
+.custom-button:pressed {
+	-fx-background-color: -ss-dark-main-color;
+}
+
+.scene-button {
+	-fx-background-insets: 0.0, 0.0 0.0 0.0 0.0;
+	-fx-background-color: -ss-accent-color;
+	-fx-content-display: graphic-only;
+}
+
+.scene-button:hover {
+	-fx-background-color: -ss-main-color;
+}
+
+.scene-button:pressed {
+	-fx-background-color: -ss-light-background-color;
+}
+
+.menu-button{
+    -fx-font-weight: NORMAL;
+}
+
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+
+
+/*******************************************************************************
+*                                                                              *
+* TABLE VIEW                                                                   *
+*                                                                              *
+*******************************************************************************/
+
+.table-view{
+	-fx-background-insets: 0.0;
+    -fx-padding: 0.0;
+}
+
+.table-view .column-header .label{
+	-fx-font-weight: normal;
+}
+
+.table-view .table-cell {
+    -fx-alignment: CENTER;
+}
+
+.table-view .text-field {
+    -fx-background-color: transparent, transparent;
+    -fx-alignment: CENTER;
+    -fx-background-insets: 0.0, 0.0 0.0 0.0 0.0;
+    -fx-background-radius: 0.0;
+}
+
+.table-cell: editable{
+    -fx-font-style: italic;
+}
+
+
+/*******************************************************************************
+*                                                                              *
+* TITLED PANE                                                                  *
+*                                                                              *
+*******************************************************************************/
+
+.titled-pane .title {
+	-fx-font-weight: normal;
+	-fx-alignment: CENTER;
+	-fx-background-insets: 0.0, 0.0 1.0 1.0 1.0;
+    -fx-background-radius: 0.0;
+}
+
+
+/*******************************************************************************
+*                                                                              *
+* PROGRESS INDICATOR                                                           *
+*                                                                              *
+*******************************************************************************/
+
+.progress-indicator {
+    -fx-progress-color: -ss-main-color;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}

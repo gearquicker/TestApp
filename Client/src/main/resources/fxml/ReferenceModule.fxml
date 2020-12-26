@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.*?>
+<fx:root prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane fx:id="titledPane" alignment="CENTER" animated="false" collapsible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <TableView fx:id="table" editable="true" prefHeight="200.0" prefWidth="200.0" />
+         </content></TitledPane>
+      <HBox alignment="CENTER_LEFT" prefHeight="25.0" spacing="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox fx:id="toolbar" alignment="CENTER_LEFT" spacing="5.0" />
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <TextField id="search-field" fx:id="tfSearch" promptText="Поиск.." />
+         </children>
+      </HBox>
+   </children>
+</fx:root>

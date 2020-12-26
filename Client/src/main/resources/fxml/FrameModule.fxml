@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<fx:root type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="mainPane" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="36.0" />
+      <AnchorPane id="decorator" fx:id="lPane" prefWidth="4.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="4.0">
+         <cursor>
+            <Cursor fx:constant="H_RESIZE" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane id="decorator" fx:id="lbPane" prefHeight="4.0" prefWidth="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="NE_RESIZE" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane id="decorator" fx:id="bPane" prefHeight="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0">
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane id="decorator" fx:id="rbPane" prefHeight="4.0" prefWidth="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane id="decorator" fx:id="rPane" prefWidth="4.0" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+         <cursor>
+            <Cursor fx:constant="H_RESIZE" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane id="decorator" fx:id="rtPane" prefHeight="4.0" prefWidth="4.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="NE_RESIZE" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane id="decorator" fx:id="tPane" prefHeight="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane id="decorator" fx:id="ltPane" prefHeight="4.0" prefWidth="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+         </cursor>
+      </AnchorPane>
+      <StackPane id="decorator" prefHeight="32.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <StackPane>
+               <children>
+                  <Label fx:id="infoLabel" />
+               </children>
+            </StackPane>
+            <BorderPane fx:id="titlePane" />
+         </children>
+      </StackPane>
+   </children>
+</fx:root>
